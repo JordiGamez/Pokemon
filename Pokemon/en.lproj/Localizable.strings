@@ -1,0 +1,15 @@
+// MARK: List
+
+"list.title" = "Pokemon";
+
+
+// MARK: Favorite screen
+
+"favorite.title" = "Favorites";
+"favorite.empty" = "You don't have any favorite Pokemon.";
+
+// MARK: Error view
+
+"error.title" = "Error";
+"error.message" = "Something went wrong.";
+"error.button" = "Try again";

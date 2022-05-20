@@ -1,0 +1,16 @@
+sourceryCommand: null
+sourceryTemplate: null
+PokemonTests:
+  sources:
+    include:
+    - ./Pokemon
+  output: ./PokemonTests/Mock/Mock.generated.swift
+  targets:
+  - PokemonTests
+  testable:
+  - Pokemon
+  import:
+  - Foundation
+  - Kingfisher
+  - RxSwift
+  - UIKit

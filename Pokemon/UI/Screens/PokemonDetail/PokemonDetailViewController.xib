@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokemonDetailViewController" customModule="Pokemon" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Xjv-eF-0Rt" id="Qkj-0Z-0ld"/>
+                <outlet property="errorView" destination="8Jp-av-eRL" id="Df3-6j-kyS"/>
+                <outlet property="pageControl" destination="F2V-cf-QHS" id="IiN-hY-Poc"/>
+                <outlet property="scrollView" destination="5AC-O1-T7r" id="fsq-da-bSq"/>
+                <outlet property="view" destination="iN0-l3-epB" id="RYx-93-usy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xjv-eF-0Rt">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AC-O1-T7r">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        </scrollView>
+                        <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="F2V-cf-QHS">
+                            <rect key="frame" x="149" y="16" width="116" height="26"/>
+                        </pageControl>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-av-eRL" customClass="ErrorView" customModule="Pokemon" customModuleProvider="target">
+                            <rect key="frame" x="62" y="204.5" width="290" height="409"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="F2V-cf-QHS" firstAttribute="top" secondItem="5AC-O1-T7r" secondAttribute="top" constant="16" id="GiQ-8G-eRq"/>
+                        <constraint firstItem="5AC-O1-T7r" firstAttribute="leading" secondItem="Xjv-eF-0Rt" secondAttribute="leading" id="KPN-ZR-a5Q"/>
+                        <constraint firstItem="8Jp-av-eRL" firstAttribute="width" secondItem="Xjv-eF-0Rt" secondAttribute="width" multiplier="0.7" id="SBO-AL-9wO"/>
+                        <constraint firstItem="F2V-cf-QHS" firstAttribute="centerX" secondItem="5AC-O1-T7r" secondAttribute="centerX" id="SON-Xf-fqH"/>
+                        <constraint firstItem="8Jp-av-eRL" firstAttribute="centerX" secondItem="Xjv-eF-0Rt" secondAttribute="centerX" id="Snp-hv-RNh"/>
+                        <constraint firstItem="8Jp-av-eRL" firstAttribute="height" secondItem="Xjv-eF-0Rt" secondAttribute="height" multiplier="0.5" id="T9n-zX-jOG"/>
+                        <constraint firstItem="8Jp-av-eRL" firstAttribute="centerY" secondItem="Xjv-eF-0Rt" secondAttribute="centerY" id="VJF-Dd-BZj"/>
+                        <constraint firstAttribute="bottom" secondItem="5AC-O1-T7r" secondAttribute="bottom" id="Y7D-V2-VuA"/>
+                        <constraint firstAttribute="trailing" secondItem="5AC-O1-T7r" secondAttribute="trailing" id="cDT-qP-Lb0"/>
+                        <constraint firstItem="5AC-O1-T7r" firstAttribute="top" secondItem="Xjv-eF-0Rt" secondAttribute="top" id="db6-hJ-UEA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xjv-eF-0Rt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5fK-6R-4En"/>
+                <constraint firstItem="Xjv-eF-0Rt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BZH-4d-mKG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Xjv-eF-0Rt" secondAttribute="trailing" id="FTS-de-ras"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Xjv-eF-0Rt" secondAttribute="bottom" id="mHd-fD-hfa"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
