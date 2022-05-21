@@ -1,0 +1,11 @@
+excluded:
+  - Pods
+  - PokemonTests/Mock
+  - Pokemon Widget
+disabled_rules:
+  - trailing_whitespace
+  - line_length
+  - type_body_length
+  - cyclomatic_complexity
+  - leading_whitespace
+  - comment_spacing
